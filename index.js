@@ -4,6 +4,7 @@ const containerBox = document.querySelector(".container");
 
 
 noButton.addEventListener("click", function(){
+    this.style.position = "absolute";
     const containerRect = containerBox.getBoundingClientRect();
     const buttonReact = this.getBoundingClientRect();
 
