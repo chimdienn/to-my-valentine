@@ -51,9 +51,9 @@ button:hover{
 .cute-cat {
     display: block;
     border-radius: 18%;
-    width: auto;
-    height: 40%;
     margin: 0 auto;
+    height: 40%;
+    width: auto;
     
 }
 
@@ -69,4 +69,19 @@ footer {
     color: #E30B5C;
     font-size: 17px;
     margin: 40px 0 0 0;
+}
+
+@media (max-width: 430px) {
+    /* Styles for all iPhones */
+    h1 {
+        font-size: 1rem;
+    }
+    h2{
+        font-size: 1rem;
+    }
+    img{
+        width: 60%;
+        height: auto;
+    }
+
 }
