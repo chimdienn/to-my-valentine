@@ -1,9 +1,13 @@
 const noButton = document.querySelector(".no");
 const yesButton = document.querySelector(".yes");
 const containerBox = document.querySelector(".container");
+const heading = document.querySelector(".container h2");
 
+const maxCount = Math.floor(Math.random() * (11 - 3 + 1)) + 2;
+var count = 0;
 
 noButton.addEventListener("click", function(){
+    count++;
     this.style.position = "absolute";
     const containerRect = containerBox.getBoundingClientRect();
     const buttonReact = this.getBoundingClientRect();
@@ -16,6 +20,9 @@ noButton.addEventListener("click", function(){
 
     this.style.left = randomX + 'px';
     this.style.top = randomY + 'px';
+    if (count > maxCount){
+        heading.innerHTML = "Sao em Linh từ chối anh Đức :("
+    }
 });
 
 yesButton.addEventListener("click", function() {
